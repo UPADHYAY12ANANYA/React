@@ -1,6 +1,7 @@
-import { useState } from 'react'
-import { Input } from './components'
-import useCurrencyInfo from './hooks/useCurrencyInfo'
+import React from 'react';
+import { useState } from 'react';
+import { Input } from './components';
+import useCurrencyInfo from './hooks/useCurrencyInfo';
 // import './App.css'
 
 function App() {
@@ -47,7 +48,7 @@ function App() {
                                 label="From"
                                 amount = {amount}
                                 currencyOptions={options}
-                                onCurrencyChange={(currency) => setAmount(amount)}
+                                onCurrencyChange={(currency) => setFrom(currency)}
                                 onAmountChange={(amount)=>setAmount(amount)}
                                 selectCurrency = {from}
                             />
